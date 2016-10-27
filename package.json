@@ -1,0 +1,28 @@
+{
+  "name": "next-example-app",
+  "version": "0.1.0",
+  "bugs": {
+    "url": "https://github.com/70-10/next-example-app/issues"
+  },
+  "dependencies": {
+    "next": "1.0.0",
+    "react-micro-container": "1.1.0"
+  },
+  "devDependencies": {
+    "del-cli": "0.2.0"
+  },
+  "homepage": "https://github.com/70-10/next-example-app#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/70-10/next-example-app.git"
+  },
+  "scripts": {
+    "build": "npm run clean && NODE_ENV=pro next build",
+    "clean": "del .next",
+    "dev": "NODE_ENV=dev next",
+    "start": "NODE_ENV=pro next start"
+  }
+}

@@ -1,4 +1,7 @@
 app:
   build: .
+  volumes:
+    - .:/next-example-app
   ports:
     - 3000:3000
+  command: yarn dev

@@ -1,8 +1,8 @@
-FROM 7010/yarn:7
+FROM node:6-alpine
 
-COPY . /opt/next-example-app
-WORKDIR /opt/next-example-app
+COPY . /next-example-app
+WORKDIR /next-example-app
 
 RUN yarn
-RUN npm run build
-CMD npm start
+RUN yarn build
+CMD ["yarn", "start"]

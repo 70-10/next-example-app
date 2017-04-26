@@ -5,11 +5,17 @@
     "url": "https://github.com/70-10/next-example-app/issues"
   },
   "dependencies": {
-    "next": "1.0.0",
+    "co": "^4.6.0",
+    "express": "^4.15.2",
+    "next": "^2.2.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
     "react-micro-container": "1.1.0"
   },
   "devDependencies": {
-    "del-cli": "0.2.0"
+    "eslint": "^3.19.0",
+    "eslint-plugin-node": "^4.2.2",
+    "rimraf": "^2.6.1"
   },
   "homepage": "https://github.com/70-10/next-example-app#readme",
   "keywords": [],
@@ -20,9 +26,9 @@
     "url": "git+https://github.com/70-10/next-example-app.git"
   },
   "scripts": {
-    "build": "npm run clean && NODE_ENV=pro next build",
-    "clean": "del .next",
-    "dev": "NODE_ENV=dev next",
-    "start": "NODE_ENV=pro next start"
+    "build": "next build",
+    "clean": "rimraf .next",
+    "dev": "NODE_ENV=dev node server.js",
+    "start": "NODE_ENV=pro node server.js"
   }
 }

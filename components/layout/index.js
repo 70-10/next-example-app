@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import PropTypes from "prop-types";
 
 export default class Layout extends React.Component {
   constructor(props) {
@@ -47,3 +48,8 @@ export default class Layout extends React.Component {
     );
   }
 }
+
+Layout.propTypes = {
+  title: PropTypes.string,
+  children: PropTypes.element,
+};

@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../layout";
+import PropTypes from "prop-types";
 
 export default class Top extends React.Component {
   constructor(props) {
@@ -43,3 +44,8 @@ export default class Top extends React.Component {
     );
   }
 }
+
+Top.propTypes = {
+  count: PropTypes.number,
+  dispatch: PropTypes.function,
+};

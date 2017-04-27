@@ -3,12 +3,17 @@ env:
   es6: true
   node: true
   mocha: true
-extends: eslint:recommended
+extends:
+  - eslint:recommended
+  - plugin:react/recommended
 plugins:
   - node
+  - react
 parserOptions:
   sourceType: module
   ecmaVersion: 2017
+  ecmaFeatures:
+    jsx: true
 rules:
   comma-dangle:
     - error
@@ -31,4 +36,4 @@ rules:
     - version: 6
       ignores:
         - asyncAwait
-
+        - modules

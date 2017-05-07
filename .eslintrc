@@ -6,27 +6,19 @@ env:
 extends:
   - eslint:recommended
   - plugin:react/recommended
+  - prettier
 plugins:
   - node
   - react
+  - prettier
 parserOptions:
   sourceType: module
   ecmaVersion: 2017
   ecmaFeatures:
     jsx: true
 rules:
-  comma-dangle:
-    - error
-    - arrays: always-multiline
-      objects: always-multiline
-      imports: always-multiline
-      exports: always-multiline
-      functions: never
-  indent: [error, 2, {SwitchCase: 1, MemberExpression: 1}]
   linebreak-style: [error, unix]
   no-console: 0
-  quotes: [error, double]
-  semi: [error, always]
   require-yield: off
   node/exports-style: [error, module.exports]
   node/no-deprecated-api: error
@@ -37,3 +29,8 @@ rules:
       ignores:
         - asyncAwait
         - modules
+  prettier/prettier:
+    - error
+    - trailingComma: es5
+      singleQuote: false
+      semi: true

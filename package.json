@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "eslint": "^3.19.0",
-    "eslint-config-prettier": "^1.7.0",
+    "eslint-config-prettier": "^2.0.0",
     "eslint-plugin-node": "^4.2.2",
     "eslint-plugin-prettier": "^2.0.1",
     "eslint-plugin-react": "^7.0.0",
@@ -38,7 +38,6 @@
     "clean": "rimraf .next",
     "dev": "NODE_ENV=dev node server.js",
     "start": "NODE_ENV=pro node server.js",
-    "fmt": "prettier --write ./{!node_modules}/**/*.js",
     "lint": "eslint --fix ./{!node_modules}/**/*.js",
     "precommit": "lint-staged"
   },

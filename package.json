@@ -36,9 +36,9 @@
   "scripts": {
     "build": "next build",
     "clean": "rimraf .next",
-    "dev": "NODE_ENV=dev node server.js",
-    "start": "NODE_ENV=pro node server.js",
-    "lint": "eslint --fix ./{!node_modules}/**/*.js",
+    "dev": "NODE_ENV=dev node bin/server.js",
+    "start": "NODE_ENV=pro node bin/server.js",
+    "lint": "eslint --fix ./{bin,components,pages}/**/*.js",
     "precommit": "lint-staged"
   },
   "lint-staged": {

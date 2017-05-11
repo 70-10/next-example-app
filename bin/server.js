@@ -15,6 +15,8 @@ co(function*() {
     return app.render(req, res, "/top", req.query);
   });
 
+  server.use("/api", require("../lib/router/api"));
+
   server.get("*", (req, res) => handle(req, res));
 
   server.listen(3000, err => {

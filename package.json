@@ -38,7 +38,7 @@
     "clean": "rimraf .next",
     "dev": "NODE_ENV=dev node bin/server.js",
     "start": "NODE_ENV=pro node bin/server.js",
-    "lint": "eslint --fix ./{bin,components,pages}/**/*.js",
+    "lint": "eslint --fix ./{bin,components,pages,lib}/**/*.js",
     "precommit": "lint-staged"
   },
   "lint-staged": {

@@ -47,5 +47,5 @@ export default class Top extends React.Component {
 
 Top.propTypes = {
   count: PropTypes.number,
-  dispatch: PropTypes.function,
+  dispatch: PropTypes.func,
 };

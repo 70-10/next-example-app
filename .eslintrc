@@ -25,9 +25,8 @@ rules:
   node/no-missing-require: error
   node/no-unsupported-features:
     - error
-    - version: 6
+    - version: 8
       ignores:
-        - asyncAwait
         - modules
   prettier/prettier:
     - error

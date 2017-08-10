@@ -1,13 +1,22 @@
 {
   "name": "next-example-app",
   "version": "0.1.0",
-  "bugs": {
-    "url": "https://github.com/70-10/next-example-app/issues"
+  "main": "index.js",
+  "repository": "70-10/next-example-app",
+  "scripts": {
+    "build": "next build",
+    "clean": "rimraf .next out",
+    "dev": "next",
+    "export": "next build && next export",
+    "start": "next start",
+    "lint": "eslint .",
+    "test": "run-s lint",
+    "precommit": "lint-staged"
   },
+  "keywords": [],
+  "license": "MIT",
   "dependencies": {
-    "co": "^4.6.0",
-    "express": "^4.15.4",
-    "next": "^2.4.9",
+    "next": "^3.0.3",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-micro-container": "1.1.0"
@@ -17,7 +26,7 @@
     "eslint-config-prettier": "^2.0.0",
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-prettier": "^2.0.1",
-    "eslint-plugin-react": "^7.0.0",
+    "eslint-plugin-react": "^7.2.0",
     "husky": "^0.14.3",
     "lint-staged": "^4.0.3",
     "npm-run-all": "^4.0.2",
@@ -25,28 +34,7 @@
     "prop-types": "^15.5.10",
     "rimraf": "^2.6.1"
   },
-  "homepage": "https://github.com/70-10/next-example-app#readme",
-  "keywords": [],
-  "license": "MIT",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/70-10/next-example-app.git"
-  },
-  "scripts": {
-    "build": "next build",
-    "clean": "rimraf .next",
-    "dev": "NODE_ENV=dev node bin/server.js",
-    "start": "NODE_ENV=pro node bin/server.js",
-    "lint": "eslint --fix ./{bin,components,pages,lib}/**/*.js",
-    "test": "run-s lint",
-    "precommit": "lint-staged"
-  },
   "lint-staged": {
-    "*.js": [
-      "prettier --write",
-      "eslint --fix",
-      "git add"
-    ]
+    "*.js": ["eslint --fix", "git add"]
   }
 }

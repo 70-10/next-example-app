@@ -11,8 +11,9 @@ export default class Top extends React.Component {
     return (
       <Layout>
         <div className="container">
-
-          <h1 className="title has-text-centered">{this.props.count}</h1>
+          <h1 className="title has-text-centered">
+            {this.props.count}
+          </h1>
           <div className="columns">
             <div className="column has-text-centered">
               <a

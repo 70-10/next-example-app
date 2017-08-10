@@ -16,7 +16,9 @@ export default class Layout extends React.Component {
             name="viewport"
             content="initial-scale=1.0, width=device-width"
           />
-          <title>{this.props.title}</title>
+          <title>
+            {this.props.title}
+          </title>
           <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css"
@@ -35,8 +37,12 @@ export default class Layout extends React.Component {
               <a className="nav-item is-tab is-hidden-mobile">Home</a>
             </div>
             <div className="nav-right nav-menu">
-              <a href="" className="nav-item is-tab">Profile</a>
-              <a href="" className="nav-item is-tab">Logout</a>
+              <a href="" className="nav-item is-tab">
+                Profile
+              </a>
+              <a href="" className="nav-item is-tab">
+                Logout
+              </a>
             </div>
           </div>
         </nav>

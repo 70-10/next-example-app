@@ -4,10 +4,10 @@
   "main": "index.js",
   "repository": "70-10/next-example-app",
   "scripts": {
-    "build": "next build",
     "clean": "rimraf .next out",
     "dev": "next",
-    "export": "next build && next export",
+    "export": "next export",
+    "preexport": "next build",
     "start": "next start",
     "lint": "eslint .",
     "test": "run-s lint",
@@ -16,6 +16,7 @@
   "keywords": [],
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.17.0",
     "next": "^4.1.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0"

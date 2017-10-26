@@ -17,6 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.17.0",
+    "bloomer": "^0.6.2",
     "next": "^4.1.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0"

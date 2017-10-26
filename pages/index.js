@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Section, Container, Title } from "bloomer";
 import axios from "axios";
 
 export default class Index extends Component {
@@ -17,10 +18,12 @@ export default class Index extends Component {
       return <li key={user.id}>{user.name}</li>;
     });
     return (
-      <div>
-        <h1>Hello Next.js</h1>
-        <ul>{userList}</ul>
-      </div>
+      <Section>
+        <Container>
+          <Title>Hello Next.js</Title>
+          <ul>{userList}</ul>
+        </Container>
+      </Section>
     );
   }
 }

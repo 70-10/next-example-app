@@ -1,29 +1,20 @@
-import React, { Component } from "react";
-import { Section, Container, Title } from "bloomer";
-import axios from "axios";
+import Head from "next/head";
+import { Component } from "react";
 
-export default class Index extends Component {
-  constructor(props, context) {
-    super(props, context);
-    this.state = { users: [] };
-  }
-
-  async componentDidMount() {
-    const res = await axios.get("http://localhost:3001/users");
-    this.setState({ users: res.data });
+export default class extends Component {
+  static async getInitialProps({ req }) {
+    const userAgent = req ? req.headers["user-agent"] : navigator.userAgent;
+    return { userAgent };
   }
 
   render() {
-    const userList = this.state.users.map(user => {
-      return <li key={user.id}>{user.name}</li>;
-    });
     return (
-      <Section>
-        <Container>
-          <Title>Hello Next.js</Title>
-          <ul>{userList}</ul>
-        </Container>
-      </Section>
+      <section className="section">
+        <div className="container">
+          <h1 className="title">Next.js Example App</h1>
+          <p>{this.props.userAgent}</p>
+        </div>
+      </section>
     );
   }
 }

@@ -1,12 +1,12 @@
 import "../styles/app.scss";
 import App from "../components/App";
 
-const Top = () => (
+const About = () => (
   <App>
     <div className="container has-text-centered">
-      <h1 className="title">Top</h1>
+      <h1 className="title">About</h1>
     </div>
   </App>
 );
 
-export default Top;
+export default About;

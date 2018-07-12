@@ -6,3 +6,4 @@
 - Redux
 - redux-saga
 - Bulma
+- Firebase

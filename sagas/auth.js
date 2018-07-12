@@ -19,15 +19,16 @@ function authenticate() {
 }
 
 function* checkAuth() {
-  console.log("CHECK AUTH");
   const user = yield call(authenticate);
-  if (user) {
-    yield put(Creator.Auth.authed(user));
+  if (!user) {
+    yield put(Creator.Auth.notAuthed(user));
+    return;
   }
+  yield put(Creator.Auth.authed(user));
 }
 
 export default [
   takeEvery(Auth.Signin, signin),
   takeEvery(Auth.Signout, signout),
-  fork(checkAuth)
+  takeEvery(Auth.CheckAuth, checkAuth)
 ];

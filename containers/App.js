@@ -5,12 +5,13 @@ import { Creator } from "../actions";
 
 const mapStateToProps = state => ({
   uid: state.auth.uid,
-  isLoading: state.auth.isLoading
+  loading: state.auth.loading
 });
 
 const mapDispatchToProps = dispatch => ({
   signin: () => dispatch(Creator.Auth.signin()),
-  signout: () => dispatch(Creator.Auth.signout())
+  signout: () => dispatch(Creator.Auth.signout()),
+  checkAuth: () => dispatch(Creator.Auth.checkAuth())
 });
 
 export default connect(

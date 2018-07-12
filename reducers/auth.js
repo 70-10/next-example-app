@@ -2,7 +2,8 @@ import { Type } from "../actions";
 const initialState = {
   uid: "",
   displayName: "",
-  email: ""
+  email: "",
+  loading: true
 };
 
 const auth = (state = initialState, action) => {
@@ -12,10 +13,11 @@ const auth = (state = initialState, action) => {
       return {
         uid: action.user.uid,
         displayName: action.user.displayName,
-        email: action.user.email
+        email: action.user.email,
+        loading: false
       };
     case Auth.NotAuthed: {
-      return { uid: "", displayName: "", email: "" };
+      return { uid: "", displayName: "", email: "", loading: false };
     }
     default:
       return state;

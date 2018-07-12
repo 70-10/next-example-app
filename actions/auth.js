@@ -2,7 +2,8 @@ export const Type = {
   Authed: "@next-static/Auth/authed",
   NotAuthed: "@next-static/Auth/not-authed",
   Signin: "@next-static/Auth/signin",
-  Signout: "@next-static/Auth/signout"
+  Signout: "@next-static/Auth/signout",
+  CheckAuth: "@next-static/Auth/check-auth"
 };
 
 export const Creator = {
@@ -20,5 +21,8 @@ export const Creator = {
   },
   signout() {
     return { type: Type.Signout };
+  },
+  checkAuth() {
+    return { type: Type.CheckAuth };
   }
 };

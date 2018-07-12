@@ -17,6 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "bulma": "^0.7.1",
+    "bulma-pageloader": "^2.1.0",
     "classnames": "^2.2.6",
     "firebase": "^5.2.0",
     "next": "^6.1.1",

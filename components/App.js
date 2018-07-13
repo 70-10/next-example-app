@@ -13,7 +13,7 @@ class App extends Component {
     const { loading, uid, signin, signout, children } = this.props;
 
     const Loading = () => (
-      <div className="pageloader is-white is-active">
+      <div className="pageloader is-primary is-active">
         <span className="title">Sign in check...</span>
       </div>
     );

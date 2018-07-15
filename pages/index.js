@@ -1,5 +1,5 @@
 import "../styles/app.scss";
-import App from "../components/App";
+import App from "../containers/App";
 
 const Top = () => (
   <App>

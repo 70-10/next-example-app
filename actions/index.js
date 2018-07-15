@@ -1,3 +1,5 @@
+import * as Auth from "./auth";
+
 export const Type = {
   Menu: {
     Toggle: "@next-static/menu/toggle",
@@ -6,7 +8,8 @@ export const Type = {
   },
   Router: {
     Push: "@next-static/router/push"
-  }
+  },
+  Auth: Auth.Type
 };
 
 export const Creator = {
@@ -25,5 +28,6 @@ export const Creator = {
     push(path) {
       return { type: Type.Router.Push, path };
     }
-  }
+  },
+  Auth: Auth.Creator
 };

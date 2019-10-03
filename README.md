@@ -1,8 +1,5 @@
 # next-example-app
 
-## Stack
-
-- Next.js
-- Redux
-- redux-saga
-- Bulma
+- Next.js 9
+- TypeScript
+- Redux-Starter-Kit

@@ -1,37 +1,38 @@
 {
   "name": "next-example-app",
   "version": "0.1.0",
+  "private": true,
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "next start",
-    "dev": "next",
-    "build": "next build",
-    "export": "next export",
-    "prestart": "npm run build",
-    "preexport": "npm run build"
-  },
-  "repository": "70-10/next-example-app",
   "keywords": [],
-  "author": "",
+  "repository": "70-10/next-example-app",
   "license": "MIT",
+  "author": "70_10",
+  "main": "prettier.config.js",
+  "scripts": {
+    "build": "next build",
+    "dev": "next",
+    "prettier": "prettier './**/*.tsx' './**/*.ts' --write",
+    "start": "next start"
+  },
   "dependencies": {
-    "bulma": "^0.7.1",
-    "classnames": "^2.2.6",
-    "next": "^6.1.1",
-    "next-redux-saga": "^3.0.0-beta.1",
-    "next-redux-wrapper": "^2.0.0-beta.6",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "react-redux": "^5.0.7",
-    "redux": "^4.0.0",
-    "redux-logger": "^3.0.6",
-    "redux-saga": "^0.16.0"
+    "next": "^9.0.7",
+    "next-redux-wrapper": "^4.0.0",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1",
+    "react-redux": "^7.0.1",
+    "redux": "^4.0.1",
+    "redux-starter-kit": "^0.7.0",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
-    "@zeit/next-sass": "^0.2.0",
-    "next-progressbar": "^1.0.0",
-    "node-sass": "^4.9.2",
-    "prettier": "^1.14.0"
+    "@types/next": "^8.0.3",
+    "@types/next-redux-wrapper": "^2.0.2",
+    "@types/node": "^12.7.9",
+    "@types/react": "^16.9.4",
+    "@types/react-dom": "^16.9.1",
+    "@types/react-redux": "^7.1.4",
+    "prettier": "^1.16.4",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3"
   }
 }

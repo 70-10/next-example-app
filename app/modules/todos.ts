@@ -7,7 +7,7 @@ interface Todo {
 }
 
 const todosModule = createSlice({
-  slice: "todos",
+  name: "todos",
   initialState: [] as Todo[],
   reducers: {
     addTodo: (state, action: PayloadAction<Todo>) => {

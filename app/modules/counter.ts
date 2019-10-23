@@ -2,7 +2,7 @@ import { createSlice, PayloadAction } from "redux-starter-kit";
 import { AppThunk } from "../store";
 
 const counterModule = createSlice({
-  slice: "counter",
+  name: "counter",
   initialState: { count: 0 },
   reducers: {
     increment: state => {

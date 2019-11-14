@@ -1,4 +1,4 @@
-import { configureStore, Action, Store } from "redux-starter-kit";
+import { configureStore, Action, Store } from "@reduxjs/toolkit";
 import { useSelector } from "react-redux";
 import reducer, { RootState } from "./reducer";
 import { ThunkAction } from "redux-thunk";

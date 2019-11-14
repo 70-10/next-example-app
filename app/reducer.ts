@@ -1,4 +1,4 @@
-import { combineReducers } from "redux-starter-kit";
+import { combineReducers } from "@reduxjs/toolkit";
 import counterModule from "./modules/counter";
 import todosModule from "./modules/todos";
 

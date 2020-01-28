@@ -9,14 +9,14 @@
   "author": "70_10",
   "main": "prettier.config.js",
   "scripts": {
-    "build": "next build",
+    "build": "next build && next export",
     "dev": "next",
     "prettier": "prettier --write './**/*.{ts,tsx}'",
     "start": "next start"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.2.3",
-    "next": "^9.2.0",
+    "next": "^9.2.1",
     "next-redux-wrapper": "^4.0.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -27,8 +27,8 @@
   "devDependencies": {
     "@types/next": "^9.0.0",
     "@types/next-redux-wrapper": "^3.0.0",
-    "@types/node": "^13.1.8",
-    "@types/react": "^16.9.17",
+    "@types/node": "^13.5.0",
+    "@types/react": "^16.9.19",
     "prettier": "^1.19.1",
     "typescript": "^3.7.5"
   }

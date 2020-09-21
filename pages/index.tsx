@@ -1,25 +1,14 @@
 import React from "react";
-import Head from "next/head";
-import Top from "../compositions/top";
+import { NextPage } from "next";
 
-type Props = {
-  title: string;
-};
+const Top: NextPage = () => (
+  <section className="section">
+    <div className="columns is-centered">
+      <div className="column is-8">
+        <h1 className="title">Hello next-example-app</h1>
+      </div>
+    </div>
+  </section>
+);
 
-class App extends React.Component<Props> {
-  static async getInitialProps(): Promise<Props> {
-    return { title: "Hello world" };
-  }
-  render() {
-    return (
-      <>
-        <Head>
-          <title>{this.props.title}</title>
-        </Head>
-        <Top />
-      </>
-    );
-  }
-}
-
-export default App;
+export default Top;

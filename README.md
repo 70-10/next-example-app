@@ -1,5 +1,3 @@
 # next-example-app
 
-- Next.js 9
-- TypeScript
-- Redux-Starter-Kit
+https://70-10.github.io/next-example-app

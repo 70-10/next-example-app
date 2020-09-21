@@ -21,7 +21,7 @@ jobs:
       - name: install and build
         run: |
           npm install
-          npm run build
+          npm run export
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v2
         env:
